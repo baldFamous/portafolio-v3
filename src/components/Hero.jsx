@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="relative w-full max-w-[400px] aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700 hover:scale-[1.02]">
           <div className="absolute inset-0 bg-slate-200 animate-pulse" /> {/* Placeholder state */}
           <Image 
-            src="/hero-portrait-new.png" 
+            src="/portafolio/hero-portrait-new.png" 
             alt="Bastian Rodriguez portrait" 
             fill
             className="object-cover z-10"
