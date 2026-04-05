@@ -6,28 +6,28 @@ const projects = [
     id: 1,
     title: "Automatización de Flujos Regionales",
     category: "Scripts de Python para optimización operativa",
-    image: "/project-map.png",
+    image: "/portafolio/project-map.png",
     className: "md:col-span-1"
   },
   {
     id: 2,
     title: "Infraestructura y Contenedores",
     category: "Despliegue seguro y escalable (Docker)",
-    image: "/project-infra.png",
+    image: "/portafolio/project-infra.png",
     className: "md:col-span-1 pt-12"
   },
   {
     id: 3,
     title: "Plataformas de Gestión Pública",
     category: "Desarrollo Full-Stack (React / Next.js)",
-    image: "/project-portal.png",
+    image: "/portafolio/project-portal.png",
     className: "md:col-span-1"
   },
   {
     id: 4,
     title: "Desarrollo Web Ágil",
     category: "Creación de APIs y lógica de negocio",
-    image: "/project-code.png",
+    image: "/portafolio/project-code.png",
     className: "md:col-span-1"
   }
 ];
