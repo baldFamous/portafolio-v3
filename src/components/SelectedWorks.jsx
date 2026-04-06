@@ -4,31 +4,27 @@ import { ArrowRight } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Automatización de Flujos Regionales",
-    category: "Scripts de Python para optimización operativa",
-    image: "/portafolio/project-map.png",
-    className: "md:col-span-1"
+    title: "Vape Ecomerce",
+    category: "Ecomerce para venta de productos de vapeo",
+    image: "/portafolio/vapeecomerce.png",
+    className: "md:col-span-1",
+    href:"https://vape-store-kappa.vercel.app/"
   },
   {
     id: 2,
-    title: "Infraestructura y Contenedores",
-    category: "Despliegue seguro y escalable (Docker)",
-    image: "/portafolio/project-infra.png",
-    className: "md:col-span-1 pt-12"
+    title: "Personal Trainer - Heroicos",
+    category: "Landing Page para entrenador personal",
+    image: "/portafolio/heroicosweb.png",
+    className: "md:col-span-1 pt-12",
+    href:"https://heroicos-web.vercel.app/"
   },
   {
     id: 3,
-    title: "Plataformas de Gestión Pública",
-    category: "Desarrollo Full-Stack (React / Next.js)",
-    image: "/portafolio/project-portal.png",
-    className: "md:col-span-1"
-  },
-  {
-    id: 4,
-    title: "Desarrollo Web Ágil",
-    category: "Creación de APIs y lógica de negocio",
-    image: "/portafolio/project-code.png",
-    className: "md:col-span-1"
+    title: "Web For Links",
+    category: "Landing Page para página de enlaces",
+    image: "/portafolio/webforlinks.png",
+    className: "md:col-span-1",
+    href:"https://weddingpage-indol.vercel.app"
   }
 ];
 
@@ -36,7 +32,7 @@ export default function SelectedWorks() {
   return (
     <section id="work" className="py-12">
       <div className="mb-12">
-        <h2 className="text-3xl font-bold text-slate-800 mb-2">Selected Works</h2>
+        <h2 className="text-3xl font-bold text-slate-800 mb-2">Trabajos Seleccionados</h2>
         <p className="text-sm text-slate-500 uppercase tracking-widest font-semibold flex items-center gap-4">
           Proyectos Destacados
           <span className="h-px w-12 bg-slate-300 block"></span>
@@ -46,7 +42,7 @@ export default function SelectedWorks() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
         {projects.map((project) => (
           <div key={project.id} className={`group cursor-pointer ${project.className}`}>
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-slate-100">
+            <a href={project.href} className="relative block w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-slate-100">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -54,7 +50,7 @@ export default function SelectedWorks() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
-            </div>
+            </a>
             
             <div className="flex items-center justify-between">
               <div>

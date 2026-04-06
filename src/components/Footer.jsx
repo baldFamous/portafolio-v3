@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="w-full relative bg-slate-50 pt-32 pb-12 overflow-hidden border-t border-slate-200">
@@ -12,12 +14,12 @@ export default function Footer() {
           </h2>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="h-14 px-8 rounded-full bg-[#b86060] text-white font-medium hover:bg-[#9a5050] transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-[#b86060]/20">
+            <Link href="https://wa.me/56956252522" target="_blank" className="inline-flex items-center justify-center h-14 px-8 rounded-full bg-[#b86060] text-white font-medium hover:bg-[#9a5050] transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-[#b86060]/20">
               Contáctame
-            </button>
-            <button className="h-14 px-8 rounded-full bg-white text-slate-800 font-medium hover:bg-slate-50 border border-slate-200 transition-all shadow-sm">
+            </Link>
+            <Link href="/R_bastian_cv.pdf" target="_blank" className="inline-flex items-center justify-center h-14 px-8 rounded-full bg-white text-slate-800 font-medium hover:bg-slate-50 border border-slate-200 transition-all shadow-sm">
               Ver CV
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -29,9 +31,8 @@ export default function Footer() {
             © 2026 Bastian Rodriguez. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-slate-800 transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-slate-800 transition-colors">Github</a>
-            <a href="#" className="hover:text-slate-800 transition-colors">Dribbble</a>
+            <a href="https://www.linkedin.com/in/bastian-rodriguez-8b0781211/" target="_blank" className="hover:text-slate-800 transition-colors">LinkedIn</a>
+            <a href="https://github.com/baldFamous" target="_blank" className="hover:text-slate-800 transition-colors">Github</a>
           </div>
         </div>
       </div>
