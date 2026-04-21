@@ -4,27 +4,35 @@ import { ArrowRight } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Vape Ecomerce",
-    category: "Ecomerce para venta de productos de vapeo",
-    image: "/portafolio/vapeecomerce.png",
-    className: "md:col-span-1",
-    href:"https://vape-store-kappa.vercel.app/"
+    title: "Web For Links",
+    category: "Landing Page para página de enlaces",
+    image: "/portafolio/webforlinks.png",
+    className: "md:col-span-1 pt-12",
+    href:"https://weddingpage-indol.vercel.app"
   },
   {
     id: 2,
     title: "Personal Trainer - Heroicos",
     category: "Landing Page para entrenador personal",
     image: "/portafolio/heroicosweb.png",
-    className: "md:col-span-1 pt-12",
+    className: "md:col-span-1",
     href:"https://heroicos-web.vercel.app/"
   },
   {
     id: 3,
-    title: "Web For Links",
-    category: "Landing Page para página de enlaces",
-    image: "/portafolio/webforlinks.png",
+    title: "Vape Ecomerce",
+    category: "Ecomerce para venta de productos de vapeo",
+    image: "/portafolio/vapeecomerce.png",
+    className: "md:col-span-1 pt-12",
+    href:"https://vape-store-kappa.vercel.app/"
+  },
+  {
+    id: 4,
+    title: "Kine Serena",
+    category: "Landing page para un kinesiologo de la Serena",
+    image: "/portafolio/kinserena.png",
     className: "md:col-span-1",
-    href:"https://weddingpage-indol.vercel.app"
+    href: "https://kinserena.vercel.app"
   }
 ];
 
@@ -40,7 +48,7 @@ export default function SelectedWorks() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
-        {projects.map((project) => (
+        {[...projects].reverse().map((project) => (
           <div key={project.id} className={`group cursor-pointer ${project.className}`}>
             <a href={project.href} className="relative block w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-slate-100">
               <Image
